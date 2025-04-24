@@ -3,38 +3,19 @@ body {
     background-color: #f0f8ff;
     color: #333;
     margin: 0;
-    padding: 0;
 }
 
-header {
+header, footer {
     background-color: #1e90ff;
     color: white;
     padding: 20px;
-   ;
+    text-align: center;
 }
 
 main {
     padding: 20px;
 }
 
-.introduction, .contact {
-    margin-bottom: 20px;
-}
-
-h1, h2 {
+h1, h2, a {
     color: #1e90ff;
-}
-
-a {
-    color: #1e90ff;
-}
-
-footer {
-    background-color: #1e90ff;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
