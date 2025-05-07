@@ -12,6 +12,7 @@ header {
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
 }
 
 main {
@@ -20,6 +21,7 @@ main {
 
 .introduction, .gallery, .contact {
     margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out;
 }
 
 h1, h2 {
@@ -29,9 +31,11 @@ h1, h2 {
 a {
     color: #1e90ff;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 a:hover {
+    color: #104e8b;
     text-decoration: underline;
 }
 
@@ -45,6 +49,11 @@ a:hover {
     max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
 }
 
 footer {
@@ -56,4 +65,26 @@ footer {
     width: 100%;
     bottom: 0;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* アニメーションの定義 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
