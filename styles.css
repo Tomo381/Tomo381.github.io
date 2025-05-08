@@ -53,7 +53,11 @@ main {
     animation: slideIn 1s ease-in-out;
 }
 
-h1, h2 {
+h1 {
+    color: white;
+}
+
+h2 {
     color: #1e90ff;
 }
 
