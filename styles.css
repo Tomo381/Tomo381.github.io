@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #1e90ff;
+    background-color: #104e8b;
     color: white;
     padding: 20px;
     text-align: center;
@@ -31,8 +31,8 @@ nav ul li {
 
 nav ul li .button {
     background-color: white;
-    color: #1e90ff;
-    border: 2px solid #1e90ff;
+    color: #104e8b;
+    border: 2px solid #104e8b;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -40,7 +40,7 @@ nav ul li .button {
 }
 
 nav ul li .button:hover {
-    background-color: #1e90ff;
+    background-color: #104e8b;
     color: white;
 }
 
@@ -53,22 +53,18 @@ main {
     animation: slideIn 1s ease-in-out;
 }
 
-h1 {
-    color: white;
-}
-
-h2 {
-    color: #1e90ff;
+h1, h2 {
+    color: #104e8b;
 }
 
 a {
-    color: #1e90ff;
+    color: #104e8b;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #104e8b;
+    color: #1e90ff;
     text-decoration: underline;
 }
 
@@ -90,7 +86,7 @@ a:hover {
 }
 
 footer {
-    background-color: #1e90ff;
+    background-color: #104e8b;
     color: white;
     text-align: center;
     padding: 10px;
