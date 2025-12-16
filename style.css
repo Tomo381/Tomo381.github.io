@@ -1,13 +1,21 @@
 body {
   font-family: 'Helvetica', sans-serif;
   margin: 0;
-  background-color: #0a1f44; /* 紺色ベース */
-  color: #fff;
+  font-size: 1.2rem; /* 文字サイズ拡大 */
+  line-height: 1.6;
+}
+
+/* コンテナ中央寄せ */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 header {
-  background-color: #0d274d;
+  background-color: #0d274d; /* 濃紺 */
   padding: 1rem;
+  color: #fff;
 }
 
 nav {
@@ -17,7 +25,7 @@ nav {
 }
 
 nav h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 nav ul {
@@ -36,27 +44,22 @@ nav a:hover {
   color: #4da6ff;
 }
 
+/* ヒーローセクション */
 .hero {
   text-align: center;
   padding: 4rem 2rem;
+  background: linear-gradient(135deg, #0a1f44, #4da6ff);
+  color: #fff;
 }
 
-section {
-  padding: 2rem;
-}
-
-.profile-img {
-  width: 150px;
-  border-radius: 50%;
-}
-
-.skills {
-  list-style: none;
-  padding: 0;
+/* Worksセクション */
+#works {
+  background-color: #f9f9f9; /* 明るい背景 */
+  color: #333;
 }
 
 .work-card {
-  background-color: #13294b;
+  background-color: #fff;
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 8px;
@@ -65,7 +68,7 @@ section {
 
 .work-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .work-card a {
@@ -84,10 +87,17 @@ section {
   transform: scale(1.05);
 }
 
+/* Contactセクション */
+#contact {
+  background-color: #e6f0ff; /* 淡いブルー */
+  color: #222;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
   background-color: #0d274d;
+  color: #fff;
 }
 
 /* スクロールアニメーション */
@@ -102,7 +112,7 @@ footer {
   transform: translateY(0);
 }
 
-/* 📱 レスポンシブ対応 */
+/* レスポンシブ対応 */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
