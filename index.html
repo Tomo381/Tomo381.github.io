@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自己紹介ページ</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ | 友哉</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>私の自己紹介ページ</h1>
-        <nav>
-            <ul>
-                <li><a href="#introduction" class="button">自己紹介</a></li>
-                <li><a href="#gallery" class="button">ギャラリー</a></li>
-                <li><a href="#research" class="button">研究成果</a></li>
-                <li><a href="#contact" class="button">連絡先</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="introduction" class="introduction">
-            <h2>自己紹介</h2>
-            <p>こんにちは、[あなたの名前]です。私は[職業や趣味]をしています。</p>
-        </section>
-        <section id="gallery" class="gallery">
-            <h2>ギャラリー</h2>
-            <div class="image-grid">
-                <img src="https://www.bing.com/ck/a?!&&p=b76295ce890d503d84d6ddba080db01d39c59ccf15dd9585f097db6a27b17e8bJmltdHM9MTc0NjU3NjAwMA&ptn=3&ver=2&hsh=4&fclid=39d00bb2-4102-64ac-0fec-1959407865a8&u=a1L2ltYWdlcy9zZWFyY2g_cT0lZTclYTklYmElZTMlODElYWUlZTclOTQlYmIlZTUlODMlOGYmaWQ9N0YxODgyRERBQjRGNTA3Njg2QTExM0MzRkM5NTY4MzhBQTU0RjVEOSZGT1JNPUlBQ0ZJUg&ntb=1" alt="画像1">
-                <img src="image2.jpg" alt="画像2">
-                <img src="image3.jpg" alt="画像3">
-            </div>
-        </section>
-        <section id="research" class="research">
-            <h2>研究成果</h2>
-            <p>ここに研究成果の詳細を記載します。</p>
-        </section>
-        <section id="contact" class="contact">
-            <h2>連絡先</h2>
-            <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 [あなたの名前]</p>
-    </footer>
+  <header>
+    <nav>
+      <h1>Tomoya Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>UI/UX Designer & Web Developer</h2>
+    <p>社会に貢献するデザインと技術を届けます。</p>
+  </section>
+
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <img src="profile.jpg" alt="プロフィール写真" class="profile-img">
+    <p>Web開発とUI/UXデザインを中心に活動しています。</p>
+    <ul class="skills">
+      <li>HTML / CSS / JavaScript</li>
+      <li>p5.js / Creative Coding</li>
+      <li>UI/UX Design</li>
+    </ul>
+  </section>
+
+  <section id="works">
+    <h2>Works / 研究成果</h2>
+
+    <!-- 制作物カード例 -->
+    <div class="work-card fade-in">
+      <h3>研究プロジェクトA</h3>
+      <p>インタラクティブWebアプリの開発</p>
+      <!-- 🔗 制作物のWEBリンクをここに貼る -->
+      <a href="https://example.com/projectA" target="_blank">リンクを見る</a>
+    </div>
+
+    <div class="work-card fade-in">
+      <h3>制作物B</h3>
+      <p>レスポンシブデザインのUI設計</p>
+      <!-- 🔗 制作物のWEBリンクをここに貼る -->
+      <a href="https://example.com/projectB" target="_blank">リンクを見る</a>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:yourmail@example.com">yourmail@example.com</a></p>
+    <p>Twitter: <a href="https://twitter.com/youraccount">@youraccount</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tomoya Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
