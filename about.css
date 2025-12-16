@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  background: linear-gradient(135deg, #ffffff, #e6f0ff);
+  background: #ffffff; /* 白背景に変更 */
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
@@ -21,39 +21,37 @@
 
 .profile-info h3 {
   margin: 0.5rem 0 0.2rem;
-  color: #0a1f44;
+  color: #0a1f44; /* 濃紺で見やすく */
   font-size: 1.2rem;
 }
 
 .profile-info p {
   margin: 0 0 1rem;
   font-size: 1.1rem;
-  color: #333;
+  color: #222; /* 黒に近い濃いグレーで可読性アップ */
 }
 
 /* 趣味カード */
 .info-card {
-  background: #ffffff;
+  background: #f9f9f9; /* 薄いグレー背景 */
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
-.info-card ul {
-  list-style: none;
-  padding: 0;
-}
-
 .info-card li {
   margin: 0.5rem 0;
   font-size: 1.1rem;
-  color: #333;
+  color: #333; /* 濃いグレー文字 */
 }
 
 /* 活動歴タイムライン */
 .timeline {
   border-left: 3px solid #4da6ff;
   padding-left: 1.5rem;
+  background: #ffffff; /* 白背景で文字を見やすく */
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
 }
 
 .timeline-item {
@@ -71,6 +69,9 @@
 
 .timeline-item .year {
   font-weight: bold;
-  color: #0a1f44;
-  margin-right: 0.5rem;
+  color: #0a1f44; /* 濃紺で強調 */
+}
+
+.timeline-item p {
+  color: #333; /* 読みやすい濃いグレー */
 }
