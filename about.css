@@ -1,4 +1,16 @@
 /* about.css */
+body {
+  background-color: #ffffff; /* 白背景 */
+  color: #222; /* 濃いグレー文字 */
+}
+
+h2, h3 {
+  color: #0a1f44; /* 濃紺で見出しを強調 */
+}
+
+p, li {
+  color: #333; /* 読みやすい濃いグレー */
+}
 
 /* ページ全体の背景と文字色 */
 body {
