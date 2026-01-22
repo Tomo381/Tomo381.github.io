@@ -1,31 +1,24 @@
+/* 全体 */
 body {
   font-family: 'Helvetica', sans-serif;
   margin: 0;
-  font-size: 1.2rem; /* 文字サイズ拡大 */
+  background-color: #f0f4f8;
+  color: #222;
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 
-/* コンテナ中央寄せ */
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
+/* ヘッダー */
 header {
-  background-color: #0d274d; /* 濃紺 */
-  padding: 1rem;
+  background-color: #0d274d;
   color: #fff;
+  padding: 1rem;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-nav h1 {
-  font-size: 1.8rem;
 }
 
 nav ul {
@@ -37,14 +30,16 @@ nav ul {
 nav a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
-nav a:hover {
-  color: #4da6ff;
+/* コンテナ */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
 }
 
-/* ヒーローセクション */
+/* Hero */
 .hero {
   text-align: center;
   padding: 4rem 2rem;
@@ -52,83 +47,80 @@ nav a:hover {
   color: #fff;
 }
 
-/* Worksセクション */
-#works {
-  background-color: #f9f9f9; /* 明るい背景 */
-  color: #333;
+/* Works グリッド */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
 }
 
 .work-card {
-  background-color: #fff;
+  background: #fff;
   padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
-.work-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+.work-card h3 {
+  margin-bottom: 0.5rem;
 }
 
 .work-card a {
   display: inline-block;
   margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1rem;
   background-color: #4da6ff;
   color: #fff;
   border-radius: 4px;
   text-decoration: none;
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.work-card a:hover {
-  background-color: #66c2ff;
-  transform: scale(1.05);
+/* About ページ */
+.profile-card,
+.info-card,
+.timeline {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
-/* Contactセクション */
-#contact {
-  background-color: #e6f0ff; /* 淡いブルー */
-  color: #222;
+.profile-card {
+  display: flex;
+  gap: 2rem;
 }
 
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4da6ff;
+}
+
+.timeline {
+  border-left: 3px solid #4da6ff;
+  padding-left: 1.5rem;
+}
+
+.timeline-item {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "●";
+  color: #4da6ff;
+  position: absolute;
+  left: -1.2rem;
+  top: 0;
+}
+
+/* フッター */
 footer {
   text-align: center;
   padding: 1rem;
   background-color: #0d274d;
   color: #fff;
-}
-
-/* スクロールアニメーション */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* レスポンシブ対応 */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .hero {
-    padding: 2rem 1rem;
-  }
-
-  .profile-img {
-    width: 100px;
-  }
 }
