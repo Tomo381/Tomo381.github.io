@@ -1,13 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const fadeElems = document.querySelectorAll(".fade-in");
+// スクロールフェードイン
+const observer = new IntersectionObserver(
+  (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+  { threshold: 0.1 }
+);
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
-  });
-
-  fadeElems.forEach(elem => observer.observe(elem));
-});
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));

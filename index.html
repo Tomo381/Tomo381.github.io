@@ -3,71 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ポートフォリオ | 友哉</title>
+  <title>Tomoya Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <nav>
-      <h1>Tomoya Portfolio</h1>
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <nav>
+    <a href="index.html" class="nav-logo">Tomoya</a>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <section id="hero" class="hero">
-    <h2>UI/UX Designer & Web Developer</h2>
-    <p>社会に貢献するデザインと技術を届けます。</p>
-  </section>
+<!-- ヒーロー -->
+<!-- 背景画像: images/hero-bg.jpg を差し替えてください -->
+<section class="hero" id="hero">
+  <h1>UI/UX Designer &amp; Web Developer</h1>
+  <p>社会に貢献するデザインと技術を届けます。</p>
+</section>
 
-  <section id="works" class="container fade-in">
-    <h2>制作物</h2>
+<!-- Works -->
+<section class="container" id="works">
+  <h2 class="section-title">Works</h2>
+  <div class="works-grid">
 
-    <div class="works-grid">
-      <div class="work-card">
-        <h3>制作物A</h3>
-        <p>Lovableを用いた簡易的ピアノアプリ</p>
-        <a href="https://happy-keys-play.lovable.app" target="_blank">アプリへ</a>
+    <!-- 制作物A -->
+    <!-- サムネイル: images/work-piano.png を差し替えてください -->
+    <div class="work-card fade-in">
+      <div class="work-card-img-placeholder">🎹</div>
+      <div class="work-card-body">
+        <h3>ピアノアプリ</h3>
+        <p>Lovableを用いて制作した、ブラウザで演奏できる簡易的なピアノアプリ。鍵盤UIとサウンド再生を実装。</p>
+        <div class="tags">
+          <span class="tag">Lovable</span>
+          <span class="tag">UI/UX</span>
+        </div>
+        <a href="https://happy-keys-play.lovable.app" target="_blank" rel="noopener">アプリへ</a>
       </div>
-
-      <div class="work-card">
-        <h3>制作物B</h3>
-        <p>名古屋市プレミアム商品券マップ</p>
-        <a href="https://nagoya-shop-finder.lovable.app" target="_blank">アプリへ</a>
-      </div>
-
-      <div class="work-card">
-        <h3>制作物C</h3>
-        <p>名古屋市行政区基本情報まとめ</p>
-        <a href="https://nagoya-explore-map.lovable.app" target="_blank">ページへ</a>
-      </div>
-
-      <div class="work-card">
-        <h3>制作物D</h3>
-        <p>追加</p>
-        <a href="#" target="_blank">ページへ</a>
-      </div>
-
-
-      <!-- 追加したい場合はこのカードをコピーするだけ -->
     </div>
-  </section>
 
-  <section id="contact" class="container fade-in">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:yourmail@example.com">yourmail@example.com</a></p>
-    <p>Twitter: <a href="#">@youraccount</a></p>
-  </section>
+    <!-- 制作物B -->
+    <!-- サムネイル: images/work-map.png を差し替えてください -->
+    <div class="work-card fade-in">
+      <div class="work-card-img-placeholder">🗺️</div>
+      <div class="work-card-body">
+        <h3>名古屋市プレミアム商品券マップ</h3>
+        <p>名古屋市のプレミアム商品券が使える店舗を地図上で検索・確認できるWebアプリ。</p>
+        <div class="tags">
+          <span class="tag">Lovable</span>
+          <span class="tag">地図API</span>
+          <span class="tag">UI/UX</span>
+        </div>
+        <a href="https://nagoya-shop-finder.lovable.app" target="_blank" rel="noopener">アプリへ</a>
+      </div>
+    </div>
 
-  <footer>
-    <p>&copy; 2025 Tomoya Portfolio</p>
-  </footer>
+    <!-- 制作物C -->
+    <!-- サムネイル: images/work-nagoya.png を差し替えてください -->
+    <div class="work-card fade-in">
+      <div class="work-card-img-placeholder">🏙️</div>
+      <div class="work-card-body">
+        <h3>名古屋市行政区基本情報まとめ</h3>
+        <p>名古屋市の各行政区の基本情報（人口・面積・特徴など）をビジュアルにまとめたページ。</p>
+        <div class="tags">
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">データビジュアライズ</span>
+        </div>
+        <a href="https://nagoya-explore-map.lovable.app" target="_blank" rel="noopener">ページへ</a>
+      </div>
+    </div>
 
-  <script src="script.js"></script>
+    <!-- 制作物D: Coming Soon -->
+    <div class="work-card fade-in">
+      <div class="work-card-img-placeholder">🚧</div>
+      <div class="work-card-body">
+        <h3>制作物D</h3>
+        <p>現在制作中です。近日公開予定。</p>
+        <div class="tags">
+          <span class="tag">Coming Soon</span>
+        </div>
+        <span class="coming-soon">Coming Soon</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact-section" id="contact">
+  <h2>Contact</h2>
+  <div class="contact-links">
+    <!-- ← 実際のメールアドレスに変更してください -->
+    <a href="mailto:yourmail@example.com">📧 yourmail@example.com</a>
+    <!-- ← 実際のTwitter/XアカウントURLに変更してください -->
+    <a href="#" target="_blank" rel="noopener">🐦 @youraccount</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Tomoya Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
